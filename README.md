@@ -1,4 +1,4 @@
-# Dapper Code Generator (Full Project Copyed form https://github.com/spronkets/DapperCodeGenerator)
+# Dapper Code Generator (Full Project Copied form https://github.com/spronkets/DapperCodeGenerator)
 Simple C# Code Generator to create Database Models and Dapper CRUD to reduce manual code entry and repetitive work. It has support for Oracle. Still working on it.
 
 ### Instructions
