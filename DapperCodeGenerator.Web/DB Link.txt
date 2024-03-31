@@ -1,0 +1,1 @@
+https://localhost:63667/Databases/Refresh?connectionType=Oracle&connectionString=Data+Source%3D192.168.15.9%3A1521%2FORCL%3BUser+Id%3DMOMS%3BPassword%3Dmoms_test_2023%3B

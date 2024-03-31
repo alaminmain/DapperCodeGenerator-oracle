@@ -48,7 +48,7 @@ namespace DapperCodeGenerator.Web.Controllers
             return View("Index", _state);
         }
 
-        private void UpdateState(DbConnectionTypes connectionType, string connectionString = null)
+        private void UpdateState(DbConnectionTypes connectionType=DbConnectionTypes.Oracle, string connectionString = null)
         {
             if (string.IsNullOrWhiteSpace(connectionString))
             {
@@ -62,7 +62,7 @@ namespace DapperCodeGenerator.Web.Controllers
             _state.SelectedDatabase = null;
         }
 
-        private string GetDefaultConnectionString(DbConnectionTypes connectionType)
+        private string GetDefaultConnectionString(DbConnectionTypes connectionType=DbConnectionTypes.Oracle)
         {
             switch (connectionType)
             {
@@ -71,7 +71,7 @@ namespace DapperCodeGenerator.Web.Controllers
                 case DbConnectionTypes.Postgres:
                     return "Server=localhost;Port=5432;User Id=postgres;Password=postgres;";
                 case DbConnectionTypes.Oracle:
-                    return "Data Source=127.0.0.1:1521/xe;User Id=oracle;Password=oracle;";
+                    return "Data Source=192.168.15.9:1521/ORCL;User Id=MOMS;Password=moms_test_2023;";
                 default:
                     return null;
             }
